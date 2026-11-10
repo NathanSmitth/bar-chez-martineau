@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colours — from the Chez Martineau logo.
+     Contrast (WCAG): cream on oxblood 7.5:1 · gold on dark-burgundy 5.0:1 ·
+     gold on oxblood 3.7:1 (LARGE headings only) · gold on cream 2.0:1 (never text) ·
+     walnut on cream 9.4:1 · oxblood on cream 7.5:1 · dark-burgundy on gold 5.0:1 */
+  --color-oxblood: #8B2A22;        /* primary sections */
+  --color-oxblood-deep: #6A1F1A;   /* footer, header, hero overlay */
+  --color-oxblood-ink: #4E1612;    /* shadows / deepest tone */
+  --color-gold: #D4A24C;           /* headings on dark, rules, buttons — never body text */
+  --color-gold-light: #E2B865;     /* button hover */
+  --color-cream: #F4EFE6;          /* reading sections */
+  --color-cream-deep: #EAE2D3;     /* cream cards / placeholder fills */
+  --color-walnut: #5A3420;         /* body text on cream */
+  --color-amber: #C2651F;          /* small highlights (decorative / borders) */
+  --color-amber-ink: #9A4A12;      /* amber when it has to carry small text on cream: 5.5:1 */
+
+  --font-heading: var(--font-cinzel), "Trajan Pro", Georgia, serif;
+  --font-serif: var(--font-lora), Georgia, serif;
+  --font-sans: var(--font-lora), Georgia, serif;
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-hover: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem; /* clear the sticky header on anchor jumps */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-walnut);
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-oxblood-deep);
+}
+
+/* ── Surfaces ─────────────────────────────────────────────────────────── */
+
+/* Paper grain on cream sections, very low opacity. */
+.paper {
+  background-color: var(--color-cream);
+  /* Pre-rendered PNG tile: an SVG feTurbulence filter cost ~7s of main-thread paint on throttled mobile. */
+  background-image: url("/images/grain.png");
+  background-size: 160px 160px;
+}
+
+/* Thin double gold border — echoes the ring on the logo. */
+.ring-double {
+  border: 3px double var(--color-gold);
+}
+/* Inset variant for photos: the double ring sits just inside the frame. */
+.ring-inset {
+  position: relative;
+}
+.ring-inset::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 3px double rgb(212 162 76 / 0.85);
+  pointer-events: none;
+}
+
+/* Sepia treatment for the archive photo slot */
+.sepia-photo {
+  filter: sepia(0.75) contrast(1.05) brightness(0.95);
+}
+
+/* Focus ring — adapts to the surface so it always clears 3:1 */
+:root { --focus: var(--color-oxblood); }
+.on-dark { --focus: var(--color-gold); }
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.tabular { font-variant-numeric: tabular-nums lining-nums; }
+
+/* ── Motion: one orchestrated moment (hero) + quiet scroll reveal ─────── */
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes badge-in {
+  from { opacity: 0; transform: scale(0.94) rotate(-6deg); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes rule-draw {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.badge-in { animation: badge-in 900ms var(--ease-out-soft) 80ms both; }
+.rise {
+  animation: rise 700ms var(--ease-out-soft) both;
+  animation-delay: calc(var(--i, 0) * 90ms + 280ms);
+}
+.rule-draw {
+  transform-origin: center;
+  animation: rule-draw 800ms var(--ease-out-soft) 420ms both;
+}
+
+[data-reveal="pending"] { opacity: 0; transform: translateY(16px); }
+[data-reveal="shown"] {
+  opacity: 1;
+  transform: none;
+  transition: opacity 600ms var(--ease-out-soft), transform 600ms var(--ease-out-soft);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .badge-in, .rise, .rule-draw { animation: none; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

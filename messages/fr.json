@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "title": "Bar Chez Martineau — Taverne à Maniwaki depuis 1889",
+    "description": "La taverne de Maniwaki depuis 1889 : quarts froids, César et billard au 231, rue Commerciale. Argent comptant. (819) 449-3600",
+    "ogTagline": "La taverne de Maniwaki depuis 1889",
+    "ogAlt": "Bar Chez Martineau — taverne à Maniwaki depuis 1889"
+  },
+  "header": {
+    "skip": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "call": "Appeler",
+    "callAria": "Appeler le Bar Chez Martineau au {phone}",
+    "language": "Langue",
+    "home": "Bar Chez Martineau — accueil"
+  },
+  "nav": {
+    "menu": "Menu",
+    "story": "Histoire",
+    "reviews": "Avis",
+    "visit": "Nous trouver"
+  },
+  "common": {
+    "since": "Depuis 1889",
+    "tbc": "À confirmer",
+    "hoursTbc": "Heures à confirmer",
+    "cashOnly": "Argent comptant seulement — guichet sur place",
+    "call": "Appeler",
+    "directions": "Itinéraire",
+    "menu": "Menu",
+    "newTab": "(nouvel onglet)"
+  },
+  "hero": {
+    "title": "La taverne de Maniwaki depuis 1889",
+    "lead": "Des quarts froids, des César, une table de billard et du monde qui jase au comptoir — au 231, rue Commerciale.",
+    "ratingLabel": "{rating} étoiles sur Google, {count} avis",
+    "ratingShort": "{count} avis Google",
+    "cash": "Argent comptant · guichet",
+    "price": "10–20 $ par personne"
+  },
+  "onTap": {
+    "title": "Ce qui vous attend",
+    "lead": "Pas de chichi. Une vraie taverne, comme on en fait plus.",
+    "cards": {
+      "quarts": {
+        "title": "Quarts froids",
+        "body": "La grosse bouteille, servie bien froide. Comme ça se fait ici depuis toujours."
+      },
+      "caesar": {
+        "title": "Le meilleur César",
+        "body": "Clamato, vodka, rebord épicé. Dites au barman comment vous l'aimez."
+      },
+      "pool": {
+        "title": "Billard",
+        "body": "Une table, de la craie et des amis à battre."
+      },
+      "cash": {
+        "title": "Argent comptant, guichet sur place",
+        "body": "On prend seulement l'argent comptant. Pas de cash sur vous? Le guichet est à l'intérieur."
+      }
+    },
+    "cta": "Appeler la taverne"
+  },
+  "menu": {
+    "title": "Menu",
+    "lead": "Prix abordables, autour de 10 à 20 $ par personne.",
+    "drinks": "À boire",
+    "food": "À manger",
+    "itemTbc": "Article à confirmer",
+    "note": "Menu et prix à confirmer avec la taverne. Appelez pour savoir ce qui est servi aujourd'hui.",
+    "cashNote": "Argent comptant seulement — guichet sur place",
+    "priceTbc": "Prix",
+    "itemTbcSuffix": "à confirmer"
+  },
+  "events": {
+    "title": "À venir à la taverne"
+  },
+  "story": {
+    "title": "Notre histoire",
+    "p1": "Chez Martineau sert Maniwaki depuis 1889. Plus d'un siècle de quarts froids, de parties de billard et de conversations au comptoir : la ville a changé autour, la taverne a gardé son caractère.",
+    "p2": "Ici, on entre comme on est, on se fait servir vite et on finit toujours par jaser avec le voisin. Les anglophones l'appellent « Marty's ». Pour tout le monde, c'est la place.",
+    "draft": "Texte provisoire — à valider par le propriétaire",
+    "timelineLabel": "Ligne du temps",
+    "t1889": "Ouverture de la taverne",
+    "tMid": "Jalon à confirmer",
+    "tMidBody": "ex. nouveau propriétaire, rénovation",
+    "tNowYear": "Aujourd'hui",
+    "tNow": "Même taverne, même accueil",
+    "photoNote": "Photo d'archive à venir"
+  },
+  "reviews": {
+    "title": "Ce qu'en disent les clients",
+    "summary": "{rating} ★ sur Google ({count} avis)",
+    "summaryAria": "Note de {rating} sur 5 sur Google, {count} avis",
+    "readAll": "Lire les avis sur Google",
+    "anonymous": "Avis Google",
+    "source": "Google",
+    "originalLang": "Avis original en anglais"
+  },
+  "photos": {
+    "title": "La taverne en images",
+    "listLabel": "Photos de la taverne"
+  },
+  "visit": {
+    "title": "Nous trouver",
+    "lead": "Au cœur de Maniwaki, sur la rue Commerciale.",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "hours": "Heures",
+    "payment": "Paiement",
+    "paymentBody": "Argent comptant seulement. Guichet automatique sur place.",
+    "mapTitle": "Carte : Bar Chez Martineau, 231 rue Commerciale, Maniwaki",
+    "cta": "Une question? Appelez-nous."
+  },
+  "footer": {
+    "tagline": "La taverne de Maniwaki depuis 1889.",
+    "social": "Réseaux sociaux",
+    "facebookTbc": "Facebook — lien à confirmer",
+    "instagramTbc": "Instagram — lien à confirmer",
+    "rights": "© {year} Bar Chez Martineau. Tous droits réservés.",
+    "credit": "Site par"
+  },
+  "callBar": {
+    "label": "Appeler"
+  },
+  "notFound": {
+    "metaTitle": "Page introuvable — Bar Chez Martineau",
+    "heading": "Cette page n'existe pas",
+    "body": "La taverne, elle, est toujours là. Revenez à l'accueil ou appelez-nous.",
+    "home": "Retour à l'accueil"
+  }
+}

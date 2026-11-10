@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "title": "Bar Chez Martineau — Maniwaki's Tavern Since 1889",
+    "description": "Maniwaki's tavern since 1889: cold quarts, Caesars and pool at 231 Rue Commerciale. Cash only, ATM on site. Call (819) 449-3600",
+    "ogTagline": "Maniwaki's tavern since 1889",
+    "ogAlt": "Bar Chez Martineau — Maniwaki's tavern since 1889"
+  },
+  "header": {
+    "skip": "Skip to content",
+    "mainNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "call": "Call",
+    "callAria": "Call Bar Chez Martineau at {phone}",
+    "language": "Language",
+    "home": "Bar Chez Martineau — home"
+  },
+  "nav": {
+    "menu": "Menu",
+    "story": "Our story",
+    "reviews": "Reviews",
+    "visit": "Find us"
+  },
+  "common": {
+    "since": "Since 1889",
+    "tbc": "To be confirmed",
+    "hoursTbc": "Hours to be confirmed",
+    "cashOnly": "Cash only — ATM on site",
+    "call": "Call",
+    "directions": "Directions",
+    "menu": "Menu",
+    "newTab": "(opens in a new tab)"
+  },
+  "hero": {
+    "title": "Maniwaki's tavern since 1889",
+    "lead": "Cold quarts, Caesars, a pool table and good conversation at the bar — at 231 Rue Commerciale.",
+    "ratingLabel": "{rating} stars on Google, {count} reviews",
+    "ratingShort": "{count} Google reviews",
+    "cash": "Cash · ATM on site",
+    "price": "$10–20 per person"
+  },
+  "onTap": {
+    "title": "What's on tap",
+    "lead": "No fuss. A real tavern, the kind they don't make anymore.",
+    "cards": {
+      "quarts": {
+        "title": "Cold quarts",
+        "body": "The big bottle, served ice cold — the way it's always been done here."
+      },
+      "caesar": {
+        "title": "Our Caesars",
+        "body": "Clamato, vodka, a spiced rim. Tell the bartender how you like it."
+      },
+      "pool": {
+        "title": "Pool",
+        "body": "One table, some chalk and friends to beat."
+      },
+      "cash": {
+        "title": "Cash only, ATM on site",
+        "body": "We only take cash. Not carrying any? The ATM is right inside."
+      }
+    },
+    "cta": "Call the tavern"
+  },
+  "menu": {
+    "title": "Menu",
+    "lead": "Easy on the wallet — around $10–20 per person.",
+    "drinks": "Drinks",
+    "food": "Food",
+    "itemTbc": "Item to be confirmed",
+    "note": "Menu and prices to be confirmed with the tavern. Call to ask what's on today.",
+    "cashNote": "Cash only — ATM on site",
+    "priceTbc": "Price",
+    "itemTbcSuffix": "to be confirmed"
+  },
+  "events": {
+    "title": "Coming up at the tavern"
+  },
+  "story": {
+    "title": "Our story",
+    "p1": "Chez Martineau has been pouring in Maniwaki since 1889. More than a century of cold quarts, games of pool and conversations at the bar: the town changed around it, the tavern kept its character.",
+    "p2": "Come as you are, get served fast, and you'll end up talking with whoever's next to you. English speakers call it \"Marty's\". Everyone calls it the spot.",
+    "draft": "Draft copy — to be approved by the owner",
+    "timelineLabel": "Timeline",
+    "t1889": "The tavern opens",
+    "tMid": "Milestone to be confirmed",
+    "tMidBody": "e.g. new owner, renovation",
+    "tNowYear": "Today",
+    "tNow": "Same tavern, same welcome",
+    "photoNote": "Archive photo coming"
+  },
+  "reviews": {
+    "title": "What people say",
+    "summary": "{rating} ★ on Google ({count} reviews)",
+    "summaryAria": "Rated {rating} out of 5 on Google, {count} reviews",
+    "readAll": "Read the reviews on Google",
+    "anonymous": "Google review",
+    "source": "Google",
+    "originalLang": "Original review in English"
+  },
+  "photos": {
+    "title": "The tavern in pictures",
+    "listLabel": "Photos of the tavern"
+  },
+  "visit": {
+    "title": "Find us",
+    "lead": "In the heart of Maniwaki, on Rue Commerciale.",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "payment": "Payment",
+    "paymentBody": "Cash only. ATM on site.",
+    "mapTitle": "Map: Bar Chez Martineau, 231 Rue Commerciale, Maniwaki",
+    "cta": "Got a question? Give us a call."
+  },
+  "footer": {
+    "tagline": "Maniwaki's tavern since 1889.",
+    "social": "Social media",
+    "facebookTbc": "Facebook — link to be confirmed",
+    "instagramTbc": "Instagram — link to be confirmed",
+    "rights": "© {year} Bar Chez Martineau. All rights reserved.",
+    "credit": "Site by"
+  },
+  "callBar": {
+    "label": "Call"
+  },
+  "notFound": {
+    "metaTitle": "Page not found — Bar Chez Martineau",
+    "heading": "This page doesn't exist",
+    "body": "The tavern's still here, though. Head back home or give us a call.",
+    "home": "Back to home"
+  }
+}
